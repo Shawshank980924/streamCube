@@ -21,23 +21,6 @@
             <artifactId>bsfit-api</artifactId>
             <version>2.0.4-SNAPSHOT</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.7</version>
-        </dependency>
-
-        <dependency>
-            <groupId>cn.com.bsfit</groupId>
-            <artifactId>stream-cube-client</artifactId>
-            <version>4.1.0-1.2</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.com.bsfit</groupId>
-            <artifactId>stream-cube-common</artifactId>
-            <version>4.1.0-1.2</version>
-        </dependency>
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
@@ -47,61 +30,6 @@
             <groupId>cn.com.bsfit</groupId>
             <artifactId>bsfit-compiler</artifactId>
             <version>1.1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.com.bsfit</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>4.5.12</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.com.bsfit</groupId>
-            <artifactId>httpcore</artifactId>
-            <version>4.4.14</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.com.bsfit</groupId>
-            <artifactId>commons-codec</artifactId>
-            <version>1.10</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.com.bsfit</groupId>
-            <artifactId>commons-logging</artifactId>
-            <version>1.2</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.com.bsfit</groupId>
-            <artifactId>gnu-crypto</artifactId>
-            <version>2.0.1</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.com.bsfit</groupId>
-            <artifactId>kryo</artifactId>
-            <version>5.0.4</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.com.bsfit</groupId>
-            <artifactId>lz4-java</artifactId>
-            <version>1.5.0</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.com.bsfit</groupId>
-            <artifactId>minlog</artifactId>
-            <version>1.3.1</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.com.bsfit</groupId>
-            <artifactId>objenesis</artifactId>
-            <version>3.1</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.com.bsfit</groupId>
-            <artifactId>reflectasm</artifactId>
-            <version>1.11.9</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.com.bsfit</groupId>
-            <artifactId>zero-allocation-hashing</artifactId>
-            <version>0.9</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -115,7 +43,6 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
-
     </dependencies>
 
     <build>
