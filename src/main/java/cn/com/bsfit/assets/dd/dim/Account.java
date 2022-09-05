@@ -1,6 +1,7 @@
 package cn.com.bsfit.assets.dd.dim;
 
 
+import java.util.Map;
 import java.util.Set;
 
 import cn.com.bsfit.anno.DD;
@@ -53,9 +54,7 @@ public class Account {
 
     private Double total_ether_sent_for_contracts;
 
-
-
-    
+    private Map<String, Double> xxx_sent;
 
 
     public Account(){
@@ -126,7 +125,7 @@ public class Account {
         this.avg_time_between_sent = avg_time_between_sent;
     }
 
-    @Field("账户最近三个月的交易流入")
+    @Field("账户的交易流入邻居")
     public Set<String> getIn_address() {
         return in_address;
     }
@@ -134,7 +133,7 @@ public class Account {
         this.in_address = in_address;
     }
 
-    @Field("账户最近三个月的交易流出")
+    @Field("账户的交易流出邻居")
     public Set<String> getOut_address() {
         return out_address;
     }
@@ -186,7 +185,7 @@ public class Account {
     public Double getTotal_ether_send_for_accounts() {
         return total_ether_sent_for_accounts;
     }
-   public void setTotal_ether_send_for_accountsd(Double total_ether_sent_for_accounts) {
+    public void setTotal_ether_send_for_accountsd(Double total_ether_sent_for_accounts) {
         this.total_ether_sent_for_accounts = total_ether_sent_for_accounts;
     }
 
@@ -222,8 +221,13 @@ public class Account {
         this.total_ether_sent_for_contracts= total_ether_sent_for_contracts;
     }
 
+    @Field("账户发送的xxx代币金额")
+    public Map<String, Double> getXxx_sent(){
+        return xxx_sent;
+    }
+    public void setXxx_sent(Map<String, Double> xxx_sent) {
+        this.xxx_sent = xxx_sent;
+    }
 
 
-    
-    
 }
