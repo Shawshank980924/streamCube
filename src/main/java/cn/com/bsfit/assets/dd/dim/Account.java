@@ -45,6 +45,15 @@ public class Account {
 
     private Double total_ether_received_for_accounts;
 
+    private Double min_value_sent_to_contracts;
+
+    private Double max_value_sent_to_contracts;
+
+    private Double avg_value_sent_to_contracts;
+
+    private Double total_ether_sent_for_contracts;
+
+
 
     
 
@@ -177,9 +186,44 @@ public class Account {
     public Double getTotal_ether_send_for_accounts() {
         return total_ether_sent_for_accounts;
     }
-    public void setTotal_ether_send_for_accountsd(Double total_ether_sent_for_accounts) {
+   public void setTotal_ether_send_for_accountsd(Double total_ether_sent_for_accounts) {
         this.total_ether_sent_for_accounts = total_ether_sent_for_accounts;
     }
+
+    @Field("向合约发送的最小金额 ")
+    public Double getMin_value_sent_to_contracts() {
+        return min_value_sent_to_contracts;
+    }
+    public void setMin_value_sent_to_contracts(Double min_value_sent_to_contracts) {
+        this.min_value_sent_to_contracts= min_value_sent_to_contracts;
+    }
+
+    @Field("向合约发送的最大金额 ")
+    public Double getMax_value_sent_to_contracts() {
+        return max_value_sent_to_contracts;
+    }
+    public void setMax_value_sent_to_contracts(Double max_value_sent_to_contracts) {
+        this.max_value_sent_to_contracts= max_value_sent_to_contracts;
+    }
+    
+    @Field("向合约发送的平均金额 ")
+    public Double getAvg_value_sent_to_contracts() {
+        return avg_value_sent_to_contracts;
+    }
+    public void setAvg_value_sent_to_contracts(Double avg_value_sent_to_contracts) {
+        this.avg_value_sent_to_contracts= avg_value_sent_to_contracts;
+    }
+
+    @Field("向合约发送的总金额 ")
+    public Double getTotal_ether_sent_for_contracts() {
+        return total_ether_sent_for_contracts;
+    }
+    public void setTotal_ether_sent_for_contracts(Double total_ether_sent_for_contracts) {
+        this.total_ether_sent_for_contracts= total_ether_sent_for_contracts;
+    }
+
+
+
     
     
 }
