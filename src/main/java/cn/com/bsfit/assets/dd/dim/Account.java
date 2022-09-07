@@ -1,6 +1,7 @@
 package cn.com.bsfit.assets.dd.dim;
 
 
+import java.util.Map;
 import java.util.Set;
 
 import cn.com.bsfit.anno.DD;
@@ -57,11 +58,11 @@ public class Account {
 
     private Double total_ether_sent_for_contracts;
 
-    private Double xxx_sent_to_contracts;
+    private Map<String,Double> xxx_sent_to_contracts;
 
-    private Double xxx_sent;
+    private Map<String,Double> xxx_sent;
 
-    private Double xxx_received;
+    private Map<String,Double> xxx_received;
 
     private Long firstReceiveERC20TxnTime;
 
@@ -257,26 +258,26 @@ public class Account {
     }
 
     @Field("账户向合约发送的xxx代币金额")
-    public Double getXxx_sent_to_contracts() {
+    public Map<String,Double> getXxx_sent_to_contracts() {
         return xxx_sent_to_contracts;
     }
-    public void setXxx_sent_to_contracts(Double xxx_sent_to_contracts) {
+    public void setXxx_sent_to_contracts(Map<String,Double> xxx_sent_to_contracts) {
         this.xxx_sent_to_contracts= xxx_sent_to_contracts;
     }
     
     @Field("账户发送的xxx代币金额")
-    public Double getXxx_sent() {
+    public Map<String,Double> getXxx_sent() {
         return xxx_sent;
     }
-    public void setXxx_sent(Double xxx_sent) {
+    public void setXxx_sent(Map<String,Double> xxx_sent) {
         this.xxx_sent= xxx_sent;
     }
 
     @Field("账户接收的xxx代币金额")
-    public Double getXxx_received() {
+    public Map<String,Double> getXxx_received() {
         return xxx_received;
     }
-    public void setXxx_received(Double xxx_received) {
+    public void setXxx_received(Map<String,Double> xxx_received) {
         this.xxx_received= xxx_received;
     }
 
