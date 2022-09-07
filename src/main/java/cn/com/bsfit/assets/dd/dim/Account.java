@@ -93,7 +93,7 @@ public class Account {
         this.avg_value_send = avg_value_send;
     }
 
-    @Field("账户第一次发送交易的时间")
+    @Field("账户第一次发送ETH交易的时间")
     public Long getFirstTxnTime() {
         return firstTxnTime;
     }
